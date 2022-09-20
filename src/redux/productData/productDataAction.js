@@ -30,11 +30,12 @@ export const fetchProductDataFailure = error => {
 export const fetchProductData = () => {
     return (dispatch) => {
         dispatch(fetchProductDataRequest)
-        axios.get('https://lfstage.html5.run/weeks').then(
+        axios.get('https://fakestoreapi.com/products').then(
             response => {
                 const productData = response.data
                 dispatch(fetchProductDataSuccess(productData))
             }).catch(error => {
+                // dispatch(fetchProductDataSuccess(jsondata))
                 const errorMsg = error.message;
                 dispatch(fetchProductDataFailure(errorMsg))
             })

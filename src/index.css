@@ -41,3 +41,20 @@ text-align: center;
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+.login-form
+{
+  justify-content: center;
+  min-height: 90vh;
+}
+
+.button-block{
+    width: 100%;
+}
+
+.login-background
+{
+    justify-content: center;
+    min-height: 30vh;
+    padding: 60px;
+}
